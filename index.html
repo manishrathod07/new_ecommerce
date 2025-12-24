@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+        </ul>
+        <div id="cart-icon" style="cursor:pointer;position:relative;">
+            🛒 <span id="cart-count" style="background:red;color:white;border-radius:50%;padding:2px 6px;font-size:12px;position:absolute;top:-10px;right:-10px;">0</span>
+        </div>
+    </nav>
+    <header class="page-header custom-hero">
+        <h1 class="custom-title">Welcome to <span class="highlight">ShopEase</span></h1>
+        <p class="custom-subtitle">Your <span class="accent">one-stop shop</span> for <span class="primary">amazing products!</span></p>
+        <p class="index-desc">Shop the latest trends, discover top deals, and enjoy fast delivery. Start your shopping journey now!</p>
+    </header>
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <div class="deal-label">Limited time deal</div>
+                <img src="assets/product1.png" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>Modern smart watch with health tracking.</p>
+                <span>$99 <span class="discount">20% OFF</span></span>
+                <button class="add-to-cart" data-name="Smart Watch" data-price="99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="deal-label">Limited time deal</div>
+                <img src="assets/product2.png" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>High quality sound and comfort.</p>
+                <span>$79 <span class="discount">15% OFF</span></span>
+                <button class="add-to-cart" data-name="Wireless Headphones" data-price="79">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="deal-label">Limited time deal</div>
+                <img src="assets/product3.png" alt="Fitness Tracker">
+                <h3>Fitness Tracker</h3>
+                <p>Track your daily activity and sleep.</p>
+                <span>$59 <span class="discount">10% OFF</span></span>
+                <button class="add-to-cart" data-name="Fitness Tracker" data-price="59">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Footer removed as requested -->
+        <div id="cart-modal" style="display:none;position:fixed;top:60px;right:20px;background:#fff;border:1px solid #ccc;padding:20px;z-index:1000;width:300px;max-height:400px;overflow:auto;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+            <h3>Your Cart</h3>
+            <ul id="cart-items" style="list-style:none;padding:0;"></ul>
+            <button onclick="document.getElementById('cart-modal').style.display='none'">Close</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
